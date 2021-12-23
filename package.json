@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "esbuild": "./node_modules/.bin/esbuild ./src/zelda.ts --bundle > dist/main.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "esbuild": "^0.13.13",
     "kaboom": "^2000.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
   }
 }
